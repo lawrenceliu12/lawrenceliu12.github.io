@@ -1,13 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import './Home.css';
 import TopBar from './TopBar/topbar'
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div className="Home">
       <TopBar />
     </div>
   );
 }
 
-export default App;
+export default Home;
