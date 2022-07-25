@@ -1,4 +1,14 @@
-.App{
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
+/* .App{
+  text-align: center;
   background: rgb(43, 41, 41);
   height: 100vh;
-}
+  padding: 0;
+  margin: 0;
+} */
