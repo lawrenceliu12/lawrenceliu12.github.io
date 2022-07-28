@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Background, Container, BG, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowForward, ArrowRight} from './Elements';
+import { Background, Container, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowForward, ArrowRight} from './Elements';
 import { Button } from '../ButtonElement';
 
 const HeroSection = () => {

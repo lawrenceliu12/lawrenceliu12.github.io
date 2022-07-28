@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 import Footer from '../Components/Footer';
-import HeroSection from '../Components/HeroSection';
+import About from '../Components/About';
 import Navbar from '../Components/Navbar'
 import Sidebar from '../Components/Sidebar'
+import Information from '../Components/Information';
+import { Projects } from '../Components/Information/Data';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +16,9 @@ const Home = () => {
     <>
       <Sidebar isOpen = {isOpen} toggle = {toggle}/>
       <Navbar toggle = {toggle}/>
-      <HeroSection />
-      <Footer />
+      <About />
+      <Information {...Projects}/>
+      <Footer /> {/* TODO: get rid of white space from footer */}  
     </>
   )
 }
