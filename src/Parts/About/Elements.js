@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {MdArrowRight, MdArrowForward} from 'react-icons/md'
+import {MdArrowDownward, MdArrowDropDown} from 'react-icons/md'
 
 export const Container = styled.div
 `
@@ -7,7 +7,7 @@ export const Container = styled.div
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 `
@@ -20,20 +20,9 @@ export const Background = styled.div
   bottom: 0; 
   left: 0;
   width: 100%;
-  height: 100%;
   overflow: hidden;
-  background-color: #4F9999;
+  background: linear-gradient(to bottom, #4F9999 15%, #17161F); 
 `
-
-// export const BG = styled.div
-// `
-//   width: 100%;
-//   height: 100%;
-//   position: fixed;
-//   -o-object-fit: cover;
-//   object-fit: cover;
-//   background: #4F9999;
-// `
 
 export const Content = styled.div
 `
@@ -103,13 +92,13 @@ export const SectionWrapper = styled.div
   align-items: center;
 `
 
-export const ArrowForward = styled(MdArrowForward)
+export const ArrowDownward = styled(MdArrowDownward)
 `
   margin-left: 8px;
   font-size: 20px;
 `
 
-export const ArrowRight = styled(MdArrowRight)
+export const ArrowDown = styled(MdArrowDropDown)
 `
   margin-left: 8px;
   font-size: 20px;

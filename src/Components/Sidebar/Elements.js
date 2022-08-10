@@ -8,7 +8,9 @@ export const Container = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #17161F;
+  background-image: background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); 
+  background-color: #000000; 
+  background-color: #17161F; 
   display: grid;
   align-items:center;
   top: 0;

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import { Background, Container, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowForward, ArrowRight} from './Elements';
-import { Button } from '../ButtonElement';
+import { Background, Container, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowDownward, ArrowDown,} from './Elements';
+import { Button } from './../../Components/ButtonElement';
 
 const HeroSection = () => {
   const[hover, setHover] = useState(false);
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 </SectionH2>
             <SectionWrapper>
                 <Button to = 'contact' onMouseEnter = {onHover} onMouseLeave = {onHover} primary = "true" dark = "true">
-                    Get in touch with me! {hover ?  <ArrowForward /> : <ArrowRight/>}
+                    Get in touch with me! {hover ?  <ArrowDownward/>  : <ArrowDown/>}
                 </Button>
             </SectionWrapper>
         </Content>

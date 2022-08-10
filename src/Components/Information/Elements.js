@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div
 `
   color: #fff;
-  background ${({background}) => (background ? '#4F9999' : '#17161F')};
+  background ${({background}) => (background ? 'linear-gradient(to bottom, #4F9999 15%, #17161F)' : 'linear-gradient(to bottom, #17161F 15%, #4F9999)')};
 
   @media screen and (max-width: 768px){
     padding: 100px 0;
@@ -13,7 +13,8 @@ export const Container = styled.div
 export const InformationWrapper = styled.div
 `
   display: grid;
-  height: 860px;
+  z-index: 1;
+  height: 100vh;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -25,6 +26,7 @@ export const InformationWrapper = styled.div
 export const TextWrapper = styled.div
 `
   max-width: 1100px;
+  margin-top: 30px;
   padding-top: 0;
   padding-bottom: 60px;
 `

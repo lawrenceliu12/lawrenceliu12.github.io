@@ -1,4 +1,4 @@
-export const Projects = {
+export const ProjectsHelper = {
     id: 'projects',
     background: false,
     headingText: true,
