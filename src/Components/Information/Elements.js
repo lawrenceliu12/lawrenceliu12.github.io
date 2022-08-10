@@ -13,7 +13,6 @@ export const Container = styled.div
 export const InformationWrapper = styled.div
 `
   display: grid;
-  z-index: 1;
   height: 860px;
   width: 100%;
   max-width: 1100px;

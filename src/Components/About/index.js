@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Background, BG, Container, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowForward, ArrowRight} from './Elements';
+import { Background, Container, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowForward, ArrowRight} from './Elements';
 import { Button } from '../ButtonElement';
 
 const HeroSection = () => {
@@ -23,7 +23,7 @@ const HeroSection = () => {
                 </SectionH2>
             <SectionWrapper>
                 <Button to = 'contact' onMouseEnter = {onHover} onMouseLeave = {onHover} primary = "true" dark = "true">
-                    Get in touch with me! {hover ? <ArrowForward /> : <ArrowRight/>}
+                    Get in touch with me! {hover ?  <ArrowForward /> : <ArrowRight/>}
                 </Button>
             </SectionWrapper>
         </Content>

@@ -10,7 +10,6 @@ export const Container = styled.div
   height: 800px;
   position: relative;
   z-index: 1;
-  background-color: #4F9999;
 `
 
 export const Background = styled.div
@@ -23,17 +22,18 @@ export const Background = styled.div
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: #4F9999;
 `
 
-export const BG = styled.div
-`
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  -o-object-fit: cover;
-  object-fit: cover;
-  background: #4F9999;
-`
+// export const BG = styled.div
+// `
+//   width: 100%;
+//   height: 100%;
+//   position: fixed;
+//   -o-object-fit: cover;
+//   object-fit: cover;
+//   background: #4F9999;
+// `
 
 export const Content = styled.div
 `

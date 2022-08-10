@@ -7,6 +7,7 @@ export const Container = styled.div
   left: 0; 
   flex-direction: column; 
   top: 35%;
+  z-index: 2;
 `
 
 export const Wrapper = styled.ul``
