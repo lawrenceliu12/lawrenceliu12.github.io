@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div
 `
   color: #fff;
-  background ${({background}) => (background ? 'linear-gradient(to bottom, #4F9999 15%, #17161F)' : 'linear-gradient(to bottom, #17161F 15%, #4F9999)')};
+  background: ${({background}) => (background ? 'linear-gradient(to bottom, #4F9999 15%, #17161F)' : 'linear-gradient(to bottom, #17161F 15%, #4F9999)')};
 
   @media screen and (max-width: 768px){
     padding: 100px 0;
