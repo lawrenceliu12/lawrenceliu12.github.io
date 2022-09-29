@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   color: #fff;
-  background: linear-gradient(to bottom, #17161F 15%, #4F9999);
+  // background: linear-gradient(to bottom, #17161F 15%, #4F9999);
+  background: #17161F;
   height: 100vh;
   position: relative;
 
@@ -24,15 +25,14 @@ export const InformationWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 1100px;
-  margin-top: 10px;
-  padding-top: 0;
+  padding-top: 10px;
   padding-bottom: 30px;
 `
 
 export const Heading = styled.h1`
-  margin-top: 60px;
+  padding-top: 60px;
   text-align: center;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
@@ -76,6 +76,13 @@ export const ProjectBox = styled.div`
   border-radius: 1.25rem; 
   border: 1px solid transparent;
   box-shadow: 0 4px 6px -1px rgb(255, 255, 255), 0 2px 4px -1px rgb(255, 255, 255); 
+  height: calc((100vh - 300px)/2);
+  max-height: 250px;
+  max-width: calc((1200px - 300px) / 3);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   &:hover{
     transition-duration: 200ms;
     box-shadow: 0 4px 6px -1px rgb(177, 156, 217), 0 2px 4px -1px rgb(177, 156, 217);
@@ -87,12 +94,13 @@ export const ProjectName = styled.h3`
   justify-content: left;
   padding-left: 0.60rem;
   color: #000;
+  padding-top: 15px;
 `
 
 export const ProjectImage = styled.img`
   transition-duration: 200ms; 
   border-radius: 1.25rem; 
-  max-height: 100%;
+  max-height: 70%;
   max-width: 100%;
   &:hover{
     transform: scale(1.03, 1.03);
@@ -109,7 +117,7 @@ export const ProjectInformation = styled.div`
 `
 
 export const ProjectInformationHeader = styled.h1`
-  margin-top: 40px;
+  padding-top: 40px;
   text-align: center;
   font-size: 30px;
   line-height: 1.1;

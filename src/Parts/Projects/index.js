@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Container, InformationWrapper, TextWrapper, Heading, Subtitle, Item, ProjectBox, ProjectName, ProjectImage, ProjectInformation, ProjectInformationHeader} from './ProjectElements'
+import { Container, InformationWrapper, TextWrapper, Heading, Subtitle, Item, ProjectBox, ProjectName, ProjectImage, ProjectInformation, ProjectInformationHeader } from './ProjectElements'
 import valPic from '../../Images/valPic.png'
 import reactWeather from '../../Images/reactWeather.jpg'
 
 const Projects = () => {
     const [modal, setModal] = useState(false);
+    const [modalTitle, setModalTitle] = useState("");
 
     const projectDescriptions = [
         {
@@ -45,40 +46,41 @@ const Projects = () => {
         },
     ]
 
-  function toggleModal(){
-    setModal(!modal);
-  }  
+    function toggleModal() {
+        setModal(!modal);
+    }
 
-  return (
-    <Container name="projects">
-        <InformationWrapper>
-            <TextWrapper>
-                <Heading>
-                    Projects
-                </Heading>
-                <Subtitle>
-                    Summary of all the projects I personally worked on
-                </Subtitle>
-            </TextWrapper>
-            <Item>
-                {
-                    projectDescriptions.map(({id, src, title, description}) => (
-                        <ProjectBox key = {id} onClick = {() => toggleModal()}>
-                            {modal ? 
-                                <ProjectInformation>
-                                    <ProjectInformationHeader>
-                                        {title}
-                                    </ProjectInformationHeader>
-                                </ProjectInformation> : ''}
-                            <ProjectImage src = {src} alt = ""/>
-                            <ProjectName>{title}</ProjectName>
-                        </ProjectBox>
-                    ))
-                }
-            </Item>
-        </InformationWrapper>
-    </Container>
-  )
+    return (
+        <Container name="projects" onClick={() => {setModal(false)}}>
+            <InformationWrapper>
+                <TextWrapper>
+                    <Heading>
+                        Projects
+                    </Heading>
+                    <Subtitle>
+                        Summary of all the projects I personally worked on
+                    </Subtitle>
+                </TextWrapper>
+                <Item>
+                    {
+                        projectDescriptions.map(({ id, src, title, description }) => (
+                            <ProjectBox key={id} onClick={(event) => {event.stopPropagation(); toggleModal(); setModalTitle(title);}}>
+
+                                <ProjectImage src={src} alt="" />
+                                <ProjectName>{title}</ProjectName>
+                            </ProjectBox>
+                        ))
+                    }
+                    {modal ?
+                        <ProjectInformation>
+                            <ProjectInformationHeader>
+                                {modalTitle}
+                            </ProjectInformationHeader>
+                        </ProjectInformation> : ''}
+                </Item>
+            </InformationWrapper>
+        </Container>
+    )
 }
 
 export default Projects

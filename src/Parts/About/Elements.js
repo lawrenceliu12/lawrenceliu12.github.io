@@ -21,7 +21,8 @@ export const Background = styled.div
   left: 0;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(to bottom, #4F9999 15%, #17161F); 
+  // background: linear-gradient(to bottom, #4F9999 15%, #17161F); 
+  background: #4F9999;
 `
 
 export const Content = styled.div
