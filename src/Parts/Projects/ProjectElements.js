@@ -86,6 +86,7 @@ export const ProjectBox = styled.div`
   &:hover{
     transition-duration: 200ms;
     box-shadow: 0 4px 6px -1px rgb(177, 156, 217), 0 2px 4px -1px rgb(177, 156, 217);
+    transform: scale(1.03, 1.03);
   }
 `
 
@@ -118,33 +119,41 @@ export const ProjectInformation = styled.div`
   background: #17161F;
 `
 
-export const ProjectInformationCloseButton = styled.button`
+export const ProjectInformationCloseButton = styled.div`
+  margin-top: 1%;
   float: right;
   background: transparent;
   border: transparent;
   color: white;
   padding-right: 1rem;
   font-size: xx-large;
+  width: 5%;
 `
 
 export const ProjectInformationHeader = styled.h1`
-  padding-top: 4%;
+  padding-top: 2%;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  width: 100%;
   line-height: 1.1;
   font-weight: 600;
   color: #79B791;
+  padding-bottom: 2%;
+  padding-left: 5%;
 
   @media screen and (max-width: 480px){
     font-size: 16px;
   }
 `
 export const ProjectInformationBody = styled.div`
+  padding-left: 2%;
+  padding-top: 2%;
   display: grid;
-  grid-template-columns: 30% 65%;
-  grid-template-rows: 33% 33% 33%;
-  gap: 10px 20px;
-  font-size: 25pt;  
+  grid-template-columns: 48% 50%;
+  font-size: 20pt;
+  word-wrap: break-word;
+  justify-content: center;
+  padding-bottom: 2%;
 `
 
 export const ProjectInformationFooter = styled.div`
