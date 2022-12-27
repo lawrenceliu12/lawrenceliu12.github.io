@@ -113,11 +113,22 @@ export const ProjectInformation = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid transparent;
+  border: 5px solid cornflowerblue;
+  border-radius: 1.25rem;
+  background: #17161F;
+`
+
+export const ProjectInformationCloseButton = styled.button`
+  float: right;
+  background: transparent;
+  border: transparent;
+  color: white;
+  padding-right: 1rem;
+  font-size: xx-large;
 `
 
 export const ProjectInformationHeader = styled.h1`
-  padding-top: 40px;
+  padding-top: 4%;
   text-align: center;
   font-size: 30px;
   line-height: 1.1;
@@ -127,4 +138,15 @@ export const ProjectInformationHeader = styled.h1`
   @media screen and (max-width: 480px){
     font-size: 16px;
   }
+`
+export const ProjectInformationBody = styled.div`
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-template-rows: 33% 33% 33%;
+  gap: 10px 20px;
+  font-size: 25pt;  
+`
+
+export const ProjectInformationFooter = styled.div`
+
 `

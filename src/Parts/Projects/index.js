@@ -1,11 +1,25 @@
 import React, { useState } from 'react'
-import { Container, InformationWrapper, TextWrapper, Heading, Subtitle, Item, ProjectBox, ProjectName, ProjectImage, ProjectInformation, ProjectInformationHeader } from './ProjectElements'
+import { Container, 
+    InformationWrapper, 
+    TextWrapper, 
+    Heading, 
+    Subtitle, 
+    Item, 
+    ProjectBox, 
+    ProjectName, 
+    ProjectImage, 
+    ProjectInformation, 
+    ProjectInformationHeader,
+    ProjectInformationBody,
+    ProjectInformationCloseButton, } from './ProjectElements'
+import {MdClose} from 'react-icons/md'
 import valPic from '../../Images/valPic.png'
 import reactWeather from '../../Images/reactWeather.jpg'
 
 const Projects = () => {
     const [modal, setModal] = useState(false);
     const [modalTitle, setModalTitle] = useState("");
+    const [modalDescription, setModalDescription] = useState("");
 
     const projectDescriptions = [
         {
@@ -23,7 +37,7 @@ const Projects = () => {
         {
             id: 3,
             src: valPic,
-            title: "Printer Dashboard",
+            title: "Playlister",
             description: "asdf",
         },
         {
@@ -51,7 +65,7 @@ const Projects = () => {
     }
 
     return (
-        <Container name="projects" onClick={() => {setModal(false)}}>
+        <Container name="projects">
             <InformationWrapper>
                 <TextWrapper>
                     <Heading>
@@ -64,8 +78,14 @@ const Projects = () => {
                 <Item>
                     {
                         projectDescriptions.map(({ id, src, title, description }) => (
-                            <ProjectBox key={id} onClick={(event) => {event.stopPropagation(); toggleModal(); setModalTitle(title);}}>
-
+                            <ProjectBox key={id} onClick={(event) => {
+                                console.log(modal);
+                                if (!modal){
+                                    event.stopPropagation();
+                                    toggleModal(); 
+                                    setModalTitle(title); 
+                                    setModalDescription(description)}}
+                                }>
                                 <ProjectImage src={src} alt="" />
                                 <ProjectName>{title}</ProjectName>
                             </ProjectBox>
@@ -73,9 +93,18 @@ const Projects = () => {
                     }
                     {modal ?
                         <ProjectInformation>
+                            <ProjectInformationCloseButton onClick={(event) => {
+                                event.stopPropagation();
+                                toggleModal();
+                            }}>
+                                <MdClose style={{cursor: 'pointer'}}/>
+                            </ProjectInformationCloseButton>
                             <ProjectInformationHeader>
                                 {modalTitle}
                             </ProjectInformationHeader>
+                            <ProjectInformationBody>
+                                {modalDescription}
+                            </ProjectInformationBody>
                         </ProjectInformation> : ''}
                 </Item>
             </InformationWrapper>
