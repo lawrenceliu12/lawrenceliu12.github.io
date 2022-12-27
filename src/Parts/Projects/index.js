@@ -34,7 +34,7 @@ const Projects = () => {
             src: googlesheets,
             title: "Google Sheets Logger",
             description: "A package that is accessable in C# that performs excel functions onto a spreadsheet using Google Sheet's personal API. This package is built specifically to assist logging and data management to be more efficient in showcasing.",
-            link: 'https://google.com'
+            link: 'https://github.com/sbucampusres/CSharp-Logger'
         },
         {
             id: 2,
@@ -48,14 +48,14 @@ const Projects = () => {
             src: playlister,
             title: "Playlister",
             description: "A full web application that lets users create a playlist of their favorite songs built from MongoDB and React. Playlists can be published, commented, and liked/disliked from users that are logged in.",
-            link: 'https://google.com'
+            link: 'https://github.com/lawrenceliu12/playlister_final'
         },
         {
             id: 4,
             src: zork,
             title: "Zork",
             description: "A text-based story adventure game built from Java where users can create and edit their own adventure. Each path leads them down a new scenario, where there is an end scenario where they have either won or lost. Inspired from the original Zork. ",
-            link: 'https://google.com'
+            link: 'https://github.com/lawrenceliu12/CSE-214-Data-Structures-and-Algorithms-Projects/tree/main/Zork%20-%20Binary%20Tree'
         },
         {
             id: 5,
@@ -69,7 +69,7 @@ const Projects = () => {
             src: logo,
             title: "Personal Website",
             description: "A website that is built to showcase my own personal projects and experiences during my years in college, and let you viewers get to know more about me!",
-            link: 'https://google.com'
+            link: 'https://github.com/lawrenceliu12/Personal-Website'
         },
     ]
 

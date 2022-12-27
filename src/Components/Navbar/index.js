@@ -25,9 +25,6 @@ function Navbar({toggle}) {
                 <Links to = "contact" smooth ={true} duration = {500} spy = {true}>Contact</Links>
               </Items>
             </Menu>
-            <Button>
-              <ButtonLink to = "/resume">Resume</ButtonLink>
-            </Button>
         </Container>
       </Nav>
     </>
