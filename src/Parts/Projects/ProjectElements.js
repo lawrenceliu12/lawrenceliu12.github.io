@@ -83,6 +83,7 @@ export const ProjectBox = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
   &:hover{
     transition-duration: 200ms;
     box-shadow: 0 4px 6px -1px rgb(177, 156, 217), 0 2px 4px -1px rgb(177, 156, 217);
@@ -94,7 +95,7 @@ export const ProjectName = styled.h3`
   margin: 0.01px 0 0.5px;
   justify-content: left;
   padding-left: 0.60rem;
-  color: #000;
+  color: cornflowerblue;
   padding-top: 15px;
 `
 

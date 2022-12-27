@@ -9,7 +9,7 @@ const HeroSection = () => {
   }
 
   return (
-    <Container id = "Home">
+    <Container id = "home">
         <Background/>
         <Content>
             <SectionH1>

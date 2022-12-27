@@ -7,22 +7,22 @@ function Navbar({toggle}) {
     <>
       <Nav>
         <Container>
-            <Logo to = '/'>lawrence</Logo>
+            <Logo to = 'home' smooth ={true} duration = {500} spy = {true}>lawrence</Logo>
             <MobileIcon onClick={toggle}>
               <GoThreeBars />
             </MobileIcon>
             <Menu>
               <Items>
-                <Links to = "home">About</Links>
+                <Links to = "home" smooth ={true} duration = {500} spy = {true}>About</Links>
               </Items>
               <Items>
-                <Links to = "experiences">Experiences</Links>
+                <Links to = "projects" smooth ={true} duration = {500} spy = {true}>Projects</Links>
               </Items>
               <Items>
-                <Links to = "projects">Projects</Links>
+                <Links to = "experiences" smooth ={true} duration = {500} spy = {true}>Experiences</Links>
               </Items>
               <Items>
-                <Links to = "contact">Contact</Links>
+                <Links to = "contact" smooth ={true} duration = {500} spy = {true}>Contact</Links>
               </Items>
             </Menu>
             <Button>
