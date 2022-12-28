@@ -9,7 +9,7 @@ const SocialLinks = () => {
     <Container>
         <Wrapper>
             <Item>
-              <Link href='https://linkedin.com' target="_blank">
+              <Link href='https://linkedin.com/in/liu-lawrence' target="_blank">
                 <>
                   LinkedIn<FaLinkedin size={30}/>
                 </>
@@ -30,7 +30,7 @@ const SocialLinks = () => {
               </Link>
             </MidItem>
             <BotItem>
-              <Link href='/Lawrence Liu_Resume.pdf' download={true}>
+              <Link href='/Lawrence_Liu_Resume.pdf' download={true}>
                 <>
                   Resume<BsFillPersonLinesFill size={30}/>
                 </>

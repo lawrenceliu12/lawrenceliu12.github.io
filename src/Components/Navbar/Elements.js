@@ -29,7 +29,7 @@ export const Container = styled.div`
   max-width: 1100 px;
 `;
 
-export const Logo = styled(LinkRouter)`
+export const Logo = styled(LinkScroll)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
