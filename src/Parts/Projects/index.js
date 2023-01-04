@@ -11,7 +11,8 @@ import { Container,
     ProjectInformation, 
     ProjectInformationHeader,
     ProjectInformationBody,
-    ProjectInformationCloseButton, } from './ProjectElements'
+    ProjectInformationCloseButton, 
+    ProjectInformationPicture } from './ProjectElements'
 import {MdClose} from 'react-icons/md'
 import {FaGithub} from 'react-icons/fa'
 import C from '../../Images/C.png'
@@ -92,7 +93,6 @@ const Projects = () => {
                     {
                         projectDescriptions.map(({ id, src, title, description, link }) => (
                             <ProjectBox key={id} onClick={(event) => {
-                                console.log(modal);
                                 if (!modal){
                                     event.stopPropagation();
                                     toggleModal(); 
@@ -123,7 +123,7 @@ const Projects = () => {
                                     {modalDescription}
                                 </div>
                                 <div style={{marginLeft: 'auto', marginRight: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
-                                    <img src={modalPicture} alt="" style={{width: '75%', height: 'auto', marginTop: 'auto'}}/>
+                                    <ProjectInformationPicture src={modalPicture} alt=""/>
                                     <FaGithub style={{marginTop: 'auto', fontSize: '25pt', cursor: 'pointer'}} onClick = {(event) => {
                                         event.stopPropagation();
                                         window.open(modalLink, "_blank");

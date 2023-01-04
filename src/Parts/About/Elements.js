@@ -21,8 +21,8 @@ export const Background = styled.div
   left: 0;
   width: 100%;
   overflow: hidden;
-  // background: linear-gradient(to bottom, #4F9999 15%, #17161F); 
-  background: #4F9999;
+  background: linear-gradient(to bottom, #4F9999 30%, #17161F); 
+  // background: #4F9999;
 `
 
 export const Content = styled.div
@@ -103,4 +103,7 @@ export const ArrowDown = styled(MdArrowDropDown)
 `
   margin-left: 8px;
   font-size: 20px;
+`
+
+export const SectionImage = styled.img`
 `

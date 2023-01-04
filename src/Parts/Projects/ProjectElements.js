@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   color: #fff;
-  // background: linear-gradient(to bottom, #17161F 15%, #4F9999);
-  background: #17161F;
+  background: linear-gradient(to bottom, #17161F 30%, #4F9999);
+  /* background: #17161F; */
   height: 100vh;
   position: relative;
 
@@ -118,6 +118,15 @@ export const ProjectInformation = styled.div`
   border: 5px solid cornflowerblue;
   border-radius: 1.25rem;
   background: #17161F;
+  /* background: linear-gradient(to bottom, #17161F 15%, #4F9999); */
+
+  @media screen and (max-width: 1024px){
+    width: 80%;
+  }
+
+  @media screen and (max-width: 700px){
+    width: 95%;
+  }
 `
 
 export const ProjectInformationCloseButton = styled.div`
@@ -155,8 +164,32 @@ export const ProjectInformationBody = styled.div`
   word-wrap: break-word;
   justify-content: center;
   padding-bottom: 2%;
+
+  @media screen and (max-width: 1024px){
+    grid-template-columns: 100%;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 700px){
+    grid-template-columns: 100%;
+    font-size: 20px;
+  }
 `
 
 export const ProjectInformationFooter = styled.div`
 
+`
+
+export const ProjectInformationPicture = styled.img`
+  width: 75%;
+  height: auto;
+  margin-top: auto;
+  
+  @media screen and (max-width: 1024px){
+    display: none;
+  }
+
+  @media screen and (max-width: 700px){
+    display: none;
+  }
 `
