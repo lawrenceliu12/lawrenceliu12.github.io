@@ -5,10 +5,10 @@ import { Link as LinkScroll } from 'react-scroll'
 
 export const Container = styled.aside`
   position: fixed;
-  z-index: 999;
   width: 100%;
   height: 100%;
-  background-image: background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); 
+  z-index: 5;
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops)); 
   background-color: #000000; 
   background-color: #17161F; 
   display: grid;
@@ -45,7 +45,7 @@ export const Menu = styled.ul`
   text-align: center;
 
   @media screen and (max-width: 480px){
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(6, 20px);
   }
 `
 
