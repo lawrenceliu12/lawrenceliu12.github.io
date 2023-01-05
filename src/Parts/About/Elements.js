@@ -106,4 +106,5 @@ export const ArrowDown = styled(MdArrowDropDown)
 `
 
 export const SectionImage = styled.img`
+  height: 50px;
 `

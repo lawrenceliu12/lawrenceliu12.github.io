@@ -1,6 +1,6 @@
 import React from 'react'
 import {GoThreeBars} from 'react-icons/go'
-import {Nav, Container, Logo, MobileIcon, Items, Menu, Links, Button, ButtonLink} from './Elements'
+import {Nav, Container, Logo, MobileIcon, Items, Menu, Links} from './Elements'
 
 function Navbar({toggle}) {
   return (
