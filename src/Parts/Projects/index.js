@@ -42,7 +42,7 @@ const Projects = () => {
             src: VAAMP,
             title: "VAAMP",
             description: "A program called Voice Activated AI-Made Portrait utilizes speech to text to generate four AI portraits based off their prompt. The picture is then shuffled onto a list that is then outputted onto a display. User is able to skip back and forth pictures.",
-            link: 'https://google.com'
+            link: 'https://github.com/Engineering-Project-Lin/Speech-To-Text'
         },
         {
             id: 3,
@@ -63,7 +63,7 @@ const Projects = () => {
             src: C,
             title: "Dynamic Memory Allocator",
             description: "A memory allocator simulator that does the same operations as malloc, free, and realloc from C, designed for the x86-64 computer architecture. This program allocates space in memory using a segregated free list.",
-            link: 'https://google.com'
+            link: 'https://github.com/lawrenceliu12/Dynamic-Memory-Allocator'
         },
         {
             id: 6,

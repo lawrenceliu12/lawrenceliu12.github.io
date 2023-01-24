@@ -79,6 +79,7 @@ export const ContactText = styled.div`
 export const ContactInput = styled.input`
   padding: 0.5rem; 
   background-color: transparent; 
+  border-color: white;
   color: #ffffff; 
   border-radius: 0.375rem; 
   border-width: 1px; 
@@ -98,9 +99,12 @@ export const ContactTextArea = styled.textarea`
   padding: 0.5rem; 
   background-color: transparent; 
   color: #ffffff; 
+  border-color: white;
   border-radius: 0.375rem; 
   border-width: 1px; 
   width: 60%;
+  max-width: 100%;
+  max-height: 50%;
   margin-left: auto;
   margin-right: auto;
   :focus{

@@ -9,7 +9,6 @@ export const Container = styled.div
   padding: 0 30px;
   height: 100vh;
   position: relative;
-  z-index: 1;
 `
 
 export const Background = styled.div
@@ -27,7 +26,6 @@ export const Background = styled.div
 
 export const Content = styled.div
 `
-  z-index: 3;
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;

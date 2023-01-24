@@ -30,7 +30,7 @@ const SocialLinks = () => {
               </Link>
             </MidItem>
             <BotItem>
-              <Link href='/Lawrence_Liu_Resume.pdf' download={true}>
+              <Link href='lawrenceliu12.github.io/Lawrence_Liu_Resume.pdf' download={true}>
                 <>
                   Resume<BsFillPersonLinesFill size={30}/>
                 </>
