@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import { Background, Container, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowDownward, ArrowDown, SectionImage} from './Elements';
+import { Background, Container, Content, SectionH1, SectionH2, SectionParagraph, SectionWrapper, ArrowDownward, ArrowDown } from './Elements';
 import { Button } from './../../Components/ButtonElement';
-import me from '../../Images/me.JPG'
+// import me from '../../Images/me.JPG'
 
 const HeroSection = () => {
   const[hover, setHover] = useState(false);

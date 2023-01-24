@@ -1,7 +1,7 @@
 import React from 'react'
 import {GoThreeBars} from 'react-icons/go'
 import {Nav, Container, Logo, MobileIcon, Items, Menu, Links} from './Elements'
-import lawrenceliu from '../../Images/logo1.png'
+// import lawrenceliu from '../../Images/logo1.png'
 
 function Navbar({toggle}) {
   return (
