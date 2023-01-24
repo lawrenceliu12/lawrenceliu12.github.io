@@ -3,6 +3,7 @@ import {FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {Container, Wrapper, Item, MidItem, BotItem, Link} from './Elements'
+import resume from '../../Lawrence_Liu_Resume.pdf'
 
 const SocialLinks = () => {
   return (
@@ -30,7 +31,7 @@ const SocialLinks = () => {
               </Link>
             </MidItem>
             <BotItem>
-              <Link href='lawrenceliu12.github.io/Lawrence_Liu_Resume.pdf' download={true}>
+              <Link href={resume} target="_blank" download={true}>
                 <>
                   Resume<BsFillPersonLinesFill size={30}/>
                 </>
