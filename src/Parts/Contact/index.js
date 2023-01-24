@@ -15,7 +15,7 @@ const Contact = () => {
                 </HeadingWrapper>
             </ContactWrapper>
             <ContactFormWrapper>
-                    <ContactForm action={process.env.REACT_APP_getFormLink} method="POST">
+                    <ContactForm action={"https://getform.io/f/6270982e-8743-4e6c-8460-2ed7de2dc766"} method="POST">
                         <ContactText>
                             I am always open for a conversation so we can get to know each other better! Feel free to contact me with your name and email below. Thank you for going through my portfolio!
                         </ContactText>
